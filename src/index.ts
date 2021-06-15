@@ -166,6 +166,7 @@ export function useLongPress<
     const touchHandlers = {
         onTouchStart: start as TouchEventHandler<Target>,
         onTouchEnd: cancel as TouchEventHandler<Target>,
+        onTouchMove: cancel as TouchEventHandler<Target>
     };
 
     // eslint-disable-next-line no-nested-ternary
